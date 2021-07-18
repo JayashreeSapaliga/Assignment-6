@@ -1,0 +1,46 @@
+<?xml version = "1.0"  encoding = "utf-8"?>
+<!DOCTYPE student_catalog [
+<!ELEMENT student_catalog (student+)>
+<!ELEMENT student (name, address, marks, hobbies)>
+<!ELEMENT name (fname, lname, mname)>
+<!ELEMENT address (houseno, streetname, cityname, state)>
+<!ELEMENT marks (#PCDATA)>
+<!ELEMENT hobbies (#PCDATA)>
+]>
+<?xml-stylesheet type="text/css" href="pgm3.css"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:student_catalog>
+ <xs:student>
+   <xs:name> 
+  	<xs:fname> Jayashree </xs:fname>
+	<xs:lname> S </xs:lname>
+	<xs:mname> Sapaliga </xs:mname>
+   </xs:name>
+   <xs:address>
+	<xs:houseno> 305 </xs:houseno>
+	<xs:streetname> Jarigekatte </xs:streetname>
+	<xs:cityname> Udupi </xs:cityname>
+	<xs:state> Karnataka </xs:state>
+   </xs:address>
+   <xs:marks> 89 </xs:marks>
+   <xs:hobbies> Singing,Dancing </xs:hobbies>
+  </xs:student>
+</xs:student_catalog>
+<xs:student_catalog>
+ <xs:student>
+   <xs:name> 
+  	<xs:fname> Ananya </xs:fname>
+	<xs:lname> M</xs:lname>
+	<xs:mname> Kotian </xs:mname>
+   </xs:name>
+   <xs:address>
+	<xs:houseno> 306 </xs:houseno>
+	<xs:streetname> Palimar </xs:streetname>
+	<xs:cityname> Mangalore </xs:cityname>
+	<xs:state> Karnataka </xs:state>
+   </xs:address>
+   <xs:marks> 95 </xs:marks>
+   <xs:hobbies> Drawing,Cooking </xs:hobbies>
+  </xs:student>
+</xs:student_catalog>
+</xs:schema>
